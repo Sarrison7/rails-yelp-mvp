@@ -1,2 +1,5 @@
-class Restaurant < ApplicationRecord
+class Review < ApplicationRecord
+  belong_to :restaurant
+  validates :content, presence: true
+
 end
